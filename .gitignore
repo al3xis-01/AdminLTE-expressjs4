@@ -132,4 +132,5 @@ dist
 package-lock.json
 .idea/
 AdminLTE-3.2.0/
-public/assets/
+.DS_Store
+src/public/.DS_Store

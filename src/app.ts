@@ -45,7 +45,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(errorMiddleware);
+//app.use(errorMiddleware);
 
 
 
