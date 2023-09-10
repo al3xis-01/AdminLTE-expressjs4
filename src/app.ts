@@ -32,10 +32,8 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 import indexRouter from "./routes/index";
 import loginRouter from "./routes/login";
 
-
 app.use('/', indexRouter);
 app.use('/', loginRouter);
-
 
 /** END use Routes */
 
@@ -43,12 +41,23 @@ app.use('/', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+    // Define un arreglo de rutas que se consideran recursos
+    const resourcePaths = ['/assets/', '/images/', '/styles/']; // Añade aquí las rutas de tus recursos
+
+    // Comprueba si la solicitud coincide con alguna ruta de recursos
+    const isResource = resourcePaths.some(resourcePath => req.path.startsWith(resourcePath));
+
+    // Si no es un recurso, redirige a la página principal
+    if (!isResource) {
+        return res.redirect('/');
+    }
+
+    // Si es un recurso, pasa al siguiente middleware (manejo de error)
     next(createError(404));
 });
 
 // error handler
 //app.use(errorMiddleware);
-
 
 
 function createError(arg0: number): any {
