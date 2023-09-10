@@ -67,6 +67,62 @@ You can check out a live demo of this project at [demo_link_here](#).
 
 ## Project Structure
 The project structure is as follows:
+- README.md
+- nodemon.json
+- package.json
+- src
+   - app.ts
+   - bin
+      - www.ts
+   - controllers
+      - IndexController.ts
+      - LoginController.ts
+   - middleware
+      - authMiddleware.ts
+      - errorMiddleware.ts
+      - notAuthMiddleware.ts
+   - public
+      - images
+      - javascripts
+      - stylesheets
+         - style.css
+   - routes
+      - index.ts
+      - login.ts
+   - views
+      - error.ejs
+      - index.ejs
+      - index2.ejs
+      - index3.ejs
+      - login.ejs
+      - login2.ejs
+      - partials
+         - default
+            - control-sidebar.ejs
+            - footer.ejs
+            - navbar.ejs
+            - preloader.ejs
+            - scripts.ejs
+            - sidebar.ejs
+            - styles.ejs
+         - v2
+            - control-sidebar.ejs
+            - footer.ejs
+            - navbar.ejs
+            - preloader.ejs
+            - scripts.ejs
+            - sidebar.ejs
+            - styles.ejs
+         - v3
+            - control-sidebar.ejs
+            - footer.ejs
+            - navbar.ejs
+            - preloader.ejs
+            - scripts.ejs
+            - sidebar.ejs
+            - styles.ejs
+- tsconfig.json
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
