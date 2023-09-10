@@ -9,6 +9,14 @@ class IndexController {
         resp.render('index');
     }
 
+    index2View(req: Request, resp: Response, next: NextFunction): void{
+        resp.render('index2');
+    }
+
+    index3View(req: Request, resp: Response, next: NextFunction): void{
+        resp.render('index3');
+    }
+
 }
 
 
