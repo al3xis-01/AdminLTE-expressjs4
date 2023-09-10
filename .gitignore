@@ -89,7 +89,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist/
 
 # Gatsby files
 .cache/
@@ -133,4 +133,3 @@ package-lock.json
 .idea/
 AdminLTE-3.2.0/
 .DS_Store
-src/public/.DS_Store

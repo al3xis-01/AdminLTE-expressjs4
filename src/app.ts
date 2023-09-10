@@ -30,9 +30,11 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 /** BEGIN use Routes */
 
 import indexRouter from "./routes/index";
-import errorMiddleware from "./middleware/errorMiddleware";
+import loginRouter from "./routes/login";
+
 
 app.use('/', indexRouter);
+app.use('/', loginRouter);
 
 
 /** END use Routes */
